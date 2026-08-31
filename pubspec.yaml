@@ -1,0 +1,54 @@
+name: singforme
+description: "A new Flutter project."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  audioplayers: ^6.0.0
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.2.2
+  just_audio: ^0.9.37
+  just_audio_background: ^0.0.1-beta.15
+  audio_session: ^0.1.19
+  video_player: ^2.9.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audio/song01.mp3
+    - assets/audio/song02.mp3
+    - assets/audio/song03.mp3
+    - assets/audio/song04.mp3
+    - assets/audio/song05.mp3
+    - assets/audio/song06.mp3
+    - assets/audio/song07.mp3
+    - assets/audio/song08.mp3
+    - assets/audio/song09.mp3
+    - assets/audio/song10.mp3
+    - assets/audio/song11.mp3
+    - assets/image/dreamtheater.jpg
+    - assets/image/balloon.webp
+    - assets/image/greenday.jpg
+    - assets/image/nirvana.webp
+    - assets/image/covers/charles.jpg
+    - assets/image/covers/nomad.jpg
+    - assets/image/covers/thespiritcarrieson.jpg
+    - assets/image/covers/default_cover.png
+    - assets/image/icon.jpeg
+    - assets/bgvid.gif
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/image/icon.jpeg"
