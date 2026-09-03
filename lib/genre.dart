@@ -197,16 +197,6 @@ class _GenreScreenState extends State<GenreScreen> {
                   }
                 },
               ),
-              _buildOptionTile(
-                icon: Icons.download,
-                title: 'Download Genre',
-                onTap: () => Navigator.pop(context),
-              ),
-              _buildOptionTile(
-                icon: Icons.favorite_border,
-                title: 'Add to Favorites',
-                onTap: () => Navigator.pop(context),
-              ),
               const SizedBox(height: 16),
             ],
           ),

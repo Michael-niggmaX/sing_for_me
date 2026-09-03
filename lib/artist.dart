@@ -274,16 +274,6 @@ class _ArtistDetailScreenState extends State<ArtistDetailScreen> {
               ),
               const SizedBox(height: 16),
               _buildOptionTile(
-                icon: Icons.share,
-                title: 'Share Artist',
-                onTap: () => Navigator.pop(context),
-              ),
-              _buildOptionTile(
-                icon: Icons.playlist_add,
-                title: 'Add to Playlist',
-                onTap: () => Navigator.pop(context),
-              ),
-              _buildOptionTile(
                 icon: _isFollowing ? Icons.favorite : Icons.favorite_border,
                 title: _isFollowing
                     ? 'Remove from Favorites'
@@ -292,11 +282,6 @@ class _ArtistDetailScreenState extends State<ArtistDetailScreen> {
                   Navigator.pop(context);
                   _toggleFollow();
                 },
-              ),
-              _buildOptionTile(
-                icon: Icons.info_outline,
-                title: 'About Artist',
-                onTap: () => Navigator.pop(context),
               ),
               const SizedBox(height: 16),
             ],

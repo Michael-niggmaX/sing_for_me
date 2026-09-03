@@ -366,11 +366,11 @@ class _PlaylistScreenState extends State<PlaylistScreen> {
       builder: (context) => AlertDialog(
         backgroundColor: const Color(0xFF282828),
         title: const Text(
-          'Delete Playlist',
+          'Clear Playlist',
           style: TextStyle(color: Colors.white),
         ),
         content: const Text(
-          'Are you sure you want to delete this playlist?',
+          'Are you sure you want to clear this playlist?',
           style: TextStyle(color: Colors.grey),
         ),
         actions: [
@@ -385,12 +385,12 @@ class _PlaylistScreenState extends State<PlaylistScreen> {
               Navigator.pop(context);
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
-                  content: Text('${widget.playlistName} deleted'),
+                  content: Text('${widget.playlistName} cleared'),
                   backgroundColor: Colors.red,
                 ),
               );
             },
-            child: const Text('Delete', style: TextStyle(color: Colors.red)),
+            child: const Text('Clear', style: TextStyle(color: Colors.red)),
           ),
         ],
       ),
@@ -455,16 +455,6 @@ class _PlaylistScreenState extends State<PlaylistScreen> {
                   Navigator.pop(context);
                   _showAddSongDialog(context);
                 },
-              ),
-              _buildOptionTile(
-                icon: Icons.edit,
-                title: 'Edit Playlist',
-                onTap: () => Navigator.pop(context),
-              ),
-              _buildOptionTile(
-                icon: Icons.share,
-                title: 'Share Playlist',
-                onTap: () => Navigator.pop(context),
               ),
               _buildOptionTile(
                 icon: Icons.delete_outline,

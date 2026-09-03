@@ -124,21 +124,13 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: Column(
                   children: [
                     Container(
-                      width: 100,
-                      height: 100,
+                      width: 120,
+                      height: 120,
                       decoration: BoxDecoration(
-                        gradient: const LinearGradient(
-                          colors: [Color(0xFFD040A0), Color(0xFF8A2BE2)],
-                          begin: Alignment.topLeft,
-                          end: Alignment.bottomRight,
-                        ),
                         borderRadius: BorderRadius.circular(30),
-                      ),
-                      child: const Center(
-                        child: Icon(
-                          Icons.music_note,
-                          size: 50,
-                          color: Colors.white,
+                        image: const DecorationImage(
+                          image: AssetImage('assets/image/icon.jpeg'),
+                          fit: BoxFit.cover,
                         ),
                       ),
                     ),
@@ -304,18 +296,6 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
 
               const SizedBox(height: 20),
-
-              // Demo Credentials Info
-              Container(
-                padding: const EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                  color: const Color(0xFF282828),
-                  borderRadius: BorderRadius.circular(12),
-                  border: Border.all(
-                    color: const Color(0xFFD040A0).withOpacity(0.3),
-                  ),
-                ),
-              ),
             ],
           ),
         ),

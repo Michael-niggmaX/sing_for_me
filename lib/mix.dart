@@ -99,26 +99,6 @@ class _MixScreenState extends State<MixScreen> {
                   _shuffleAndPlay();
                 },
               ),
-              _buildOptionTile(
-                icon: Icons.download,
-                title: 'Download Mix',
-                onTap: () => Navigator.pop(context),
-              ),
-              _buildOptionTile(
-                icon: Icons.share,
-                title: 'Share Mix',
-                onTap: () => Navigator.pop(context),
-              ),
-              _buildOptionTile(
-                icon: Icons.favorite_border,
-                title: 'Add to Favorites',
-                onTap: () => Navigator.pop(context),
-              ),
-              _buildOptionTile(
-                icon: Icons.playlist_add,
-                title: 'Add to Playlist',
-                onTap: () => Navigator.pop(context),
-              ),
               const SizedBox(height: 16),
             ],
           ),

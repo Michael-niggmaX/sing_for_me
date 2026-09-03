@@ -205,10 +205,6 @@ class _NowPlayingScreenState extends State<NowPlayingScreen>
               fontWeight: FontWeight.w500,
             ),
           ),
-          IconButton(
-            icon: const Icon(Icons.more_vert, color: Colors.white, size: 28),
-            onPressed: _showOptionsMenu,
-          ),
         ],
       ),
     );
@@ -261,10 +257,6 @@ class _NowPlayingScreenState extends State<NowPlayingScreen>
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           IconButton(
-            icon: const Icon(Icons.shuffle, color: Colors.grey, size: 28),
-            onPressed: () {},
-          ),
-          IconButton(
             icon: const Icon(
               Icons.skip_previous,
               color: Colors.white,
@@ -304,10 +296,6 @@ class _NowPlayingScreenState extends State<NowPlayingScreen>
           IconButton(
             icon: const Icon(Icons.skip_next, color: Colors.white, size: 36),
             onPressed: _audioService.nextTrack,
-          ),
-          IconButton(
-            icon: const Icon(Icons.repeat, color: Colors.grey, size: 28),
-            onPressed: () {},
           ),
         ],
       ),
@@ -415,48 +403,10 @@ class _NowPlayingScreenState extends State<NowPlayingScreen>
                   borderRadius: BorderRadius.circular(2),
                 ),
               ),
-              const SizedBox(height: 16),
-              _buildOptionTile(
-                icon: Icons.favorite_border,
-                title: 'Add to Favorites',
-                onTap: () => Navigator.pop(context),
-              ),
-              _buildOptionTile(
-                icon: Icons.playlist_add,
-                title: 'Add to Playlist',
-                onTap: () => Navigator.pop(context),
-              ),
-              _buildOptionTile(
-                icon: Icons.share,
-                title: 'Share',
-                onTap: () => Navigator.pop(context),
-              ),
-              _buildOptionTile(
-                icon: Icons.equalizer,
-                title: 'Equalizer',
-                onTap: () => Navigator.pop(context),
-              ),
-              const SizedBox(height: 16),
             ],
           ),
         );
       },
-    );
-  }
-
-  Widget _buildOptionTile({
-    required IconData icon,
-    required String title,
-    required VoidCallback onTap,
-  }) {
-    return ListTile(
-      leading: Icon(icon, color: const Color(0xFFD040A0)),
-      title: Text(
-        title,
-        style: const TextStyle(color: Colors.white, fontSize: 16),
-      ),
-      trailing: const Icon(Icons.chevron_right, color: Colors.grey),
-      onTap: onTap,
     );
   }
 
